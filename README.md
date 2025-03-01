@@ -1,5 +1,10 @@
 # EasyPopupMenu - Jetpack Compose
 
+[![](https://jitpack.io/v/ahmet-ozberk/EasyPopupMenu.svg)](https://jitpack.io/#ahmet-ozberk/EasyPopupMenu)
+[![Platform](https://img.shields.io/badge/platform-Android-green.svg)](https://github.com/ahmet-ozberk/EasyPopupMenu)
+[![API](https://img.shields.io/badge/API-23%2B-brightgreen.svg)](https://android-arsenal.com/api?level=23)
+[![License](https://img.shields.io/badge/license-Apache%202.0-blue.svg)](https://github.com/ahmet-ozberk/toastify/blob/main/LICENSE)
+
 A customizable, animated and easy-to-use popup menu component for Jetpack Compose.
 
 <p align="center">
@@ -22,17 +27,19 @@ Add JitPack repository to your build file:
 
 ```groovy
 // settings.gradle.kts
-dependencyResolutionManagement {
-    repositories {
-        maven { url = uri("https://jitpack.io") }
-    }
-}
+	dependencyResolutionManagement {
+		repositoriesMode.set(RepositoriesMode.FAIL_ON_PROJECT_REPOS)
+		repositories {
+			mavenCentral()
+			maven { url 'https://jitpack.io' }
+		}
+	}
 ```
 ```groovy
 // app/build.gradle.kts
-dependencies {
-    implementation("com.github.ahmet-ozberk:easypopupmenu:1.0.0")
-}
+	dependencies {
+	        implementation 'com.github.ahmet-ozberk:EasyPopupMenu:Tag'
+	}
 ````
 
 ## Basic Usage
